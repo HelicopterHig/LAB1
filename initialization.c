@@ -8,8 +8,13 @@ int main( int argc, char *argv[])
     char destiny;
 
     number = atof(argv[1]);
-   
-    
+
+     
+   if ( argc == 1) {
+       printf ("Error! Enter the data.");
+   }
+   else
+   {
     if ( argc == 2) {
         destiny = 'C';
 
@@ -49,4 +54,8 @@ int main( int argc, char *argv[])
             printf("%.2f F\n", (number - 273.15) * (9.0 / 5.0) + 32.0);
         }   
     }
+   }
+    return 0;
 }
+
+
