@@ -6,10 +6,10 @@
 
 int main(int argc, char *argv[])
 {
-    double number;
+    float number;
     char destiny;
 
-    number = atof(argv[1]);
+    
 
     if (argc == 1)
     {
@@ -20,9 +20,6 @@ int main(int argc, char *argv[])
         if (argc == 2)
         {
             destiny = 'C';
-            if (number < -273.15)
-            {
-            }
             if (number < -273.15)
             {
                 printf("Temperature < absolute zero for Celsius!\n");
@@ -189,7 +186,9 @@ int main(int argc, char *argv[])
                 }
             }
         }
-
+        number = atof(argv[1]);
         return 0;
     }
+
 }
+
