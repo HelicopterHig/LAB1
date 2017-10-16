@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
     }
     else
     {
+	number = atof(argv[1]);
+
         if (argc == 2)
         {
             destiny = 'C';
@@ -186,10 +188,8 @@ int main(int argc, char *argv[])
                 }
             }
         }
-        number = atof(argv[1]);
-        return 0;
+        
+ 
     }
-
+    return 0;
 }
-
-
